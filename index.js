@@ -42,7 +42,7 @@ transporter.sendMail(mailOptions);
 
 const PORT=process.env.PORT||3001;
 
-app.use(express.static(path.resolve(__dirname, 'client')));
+app.use(express.static(path.resolve(__dirname, '/client/build/index.html')));
 app.listen(PORT, ()=>{
 console.log(`Server listening to ${PORT}`)
 
